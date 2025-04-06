@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+	srand(time(0));
+	int aleatorio,x=2000000000;
+	aleatorio=rand()%100+1;
+	cout<<aleatorio<<endl;
+	cin>>x;
+	while(x!=aleatorio)
+	{	if(abs(aleatorio-x)<=5){
+				cout<<"CALIENTE"<<endl;
+				cin>>x;}
+		 else if(abs(aleatorio-x)<=25){
+		 		cout<<"tibio"<<endl;
+		 		cin>>x;}
+		 else{
+		 		cout<<"frio"<<endl;
+		 		cin>>x;}
+	}
+	cout<<"Victoriaaaa";
+	return 0;
+	}
